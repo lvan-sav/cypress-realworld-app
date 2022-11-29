@@ -63,7 +63,7 @@ module.exports = defineConfig({
     supportFile: "cypress/support/e2e.ts",
     viewportHeight: 1000,
     viewportWidth: 1280,
-    experimentalSessionAndOrigin: !!process.env.REACT_APP_AUTH0_CLIENTID,
+    experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
       const testDataApiEndpoint = `${config.env.apiUrl}/testData`;
 
