@@ -96,7 +96,6 @@ linux-workflow: &linux-workflow
         yarn: true
         start: yarn start:ci
         record: true
-        ci-build-id: ${CIRCLE_SHA1:0:8}
         requires:
           - Setup Linux
         post-steps:
