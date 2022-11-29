@@ -94,6 +94,7 @@ linux-workflow: &linux-workflow
         wait-on: "http://localhost:3000"
         yarn: true
         start: yarn start:ci
+        record: true
         requires:
           - Setup Linux
         post-steps:
