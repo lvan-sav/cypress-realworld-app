@@ -92,7 +92,7 @@ linux-workflow: &linux-workflow
         browser: chrome
         executor: with-chrome-and-firefox
         wait-on: "http://localhost:3000"
-        command-prefix: npx percy exec --
+        command-prefix: NODE_OPTIONS=--max-old-space-size=6144 npx percy exec --
         yarn: true
         start: yarn start:ci
         requires:
